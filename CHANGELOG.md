@@ -1,5 +1,10 @@
 # Changelog
 
+## [Ejercicio 2]
+- Definición de las entidades del dominio: EntidadBase, Genero, Editorial, Moneda, TipoCotizacion, CotizacionDolar, Libro, Precio, Stock.
+- Aplicación de encapsulamiento (atributos privados con `__`, properties con validación en los setters).
+- Relaciones por composición entre entidades (Libro-Genero, Libro-Editorial, Precio-Libro, Precio-Moneda, Stock-Libro, CotizacionDolar-TipoCotizacion).
+
 ## [Ejercicio 1]
 - Inicialización del repositorio y creación de la rama Sprint_1.
 - Creación de la estructura de directorios del proyecto.
