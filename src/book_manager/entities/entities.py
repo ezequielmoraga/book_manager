@@ -234,7 +234,7 @@ class Precio(EntidadBase):
 class Stock(EntidadBase):
     """Cantidad disponible en el stock de un libro determinado"""
 
-    def __init__(self, id:int, libro: Libro, cantidad=int) ->None:
+    def __init__(self, id:int, libro: Libro, cantidad : int) -> None: ##"estaba asi > "def __init__(self, id:int, libro: Libro, cantidad=int) ->None:
         super().__init__(id)
         self.__libro: Libro = libro
         self.__cantidad: int = cantidad
