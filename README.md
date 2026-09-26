@@ -12,3 +12,7 @@ Se desarrolla una aplicación de consola (CLI) en Python que permite gestionar e
 
 ### Entidades
 - Libro, Genero, Editorial, Moneda, TipoCotizacion, Precio, Stock, CotizacionDolar
+
+
+Ejercicio 04 – Servicios
+Se implementó la capa de servicios en services.py, creando un servicio genérico para las operaciones CRUD y servicios específicos para Stock y CotizacionDolar. Estos servicios funcionan como intermediarios entre las operaciones del sistema y los repositorios, permitiendo crear, consultar, listar, actualizar y eliminar los datos correspondientes.
