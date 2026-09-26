@@ -1,4 +1,10 @@
 # Changelog
+
+## [Ejercicio 6]
+- Creación de la interfaz de consola en `ui/console.py` (clase ConsolaUI).
+- Implementación completa del CRUD mediante menús interactivos para las 8 entidades (Libro, Genero, Editorial, Moneda, TipoCotizacion, Precio, Stock, CotizacionDolar).
+- Creación y configuración de `main.py` como punto de entrada principal de la aplicación.
+- Integración de la capa de presentación (UI) con los servicios del sistema.
 ## [Ejercicio 4]
 - Implementación de la capa de servicios en `services.py`.
 - Creación de `ServicioGenerico` para las operaciones de crear, buscar por id, listar, actualizar y eliminar.
