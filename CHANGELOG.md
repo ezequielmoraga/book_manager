@@ -1,5 +1,9 @@
 # Changelog
 
+## [Ejercicio 3]
+- Definición de la interfaz genérica IRepositorio[T] (crear, leer_por_id, leer_todos, actualizar, eliminar) y su implementación en memoria RepositorioGenerico.
+- Definición de interfaces específicas IRepositorioStock e IRepositorioCotizacionDolar (con clave propia: libro_id, y tipo+fecha respectivamente) y sus implementaciones.
+
 ## [Ejercicio 2]
 - Definición de las entidades del dominio: EntidadBase, Genero, Editorial, Moneda, TipoCotizacion, CotizacionDolar, Libro, Precio, Stock.
 - Aplicación de encapsulamiento (atributos privados con `__`, properties con validación en los setters).
