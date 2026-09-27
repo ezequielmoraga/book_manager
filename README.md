@@ -1,4 +1,6 @@
 # Book Manager
+Tomar el sitio Cúspide como referencia para el trabajo.
+[text](https://cuspide.com/)
 
 ## Sprint actual: Sprint 1
 
