@@ -2,6 +2,7 @@ from datetime import datetime
 from book_manager.entities.entities import Genero, Editorial, Moneda, TipoCotizacion, CotizacionDolar, Libro, Precio, Stock
 from book_manager.repositories.repositories import RepositorioGenerico, RepositorioStock, RepositorioCotizacionDolar
 from book_manager.services.services import ServicioGenerico, StockService, CotizacionDolarService
+from book_manager.preload_data.preload_data import cargar_datos
 
 class ConsolaUI:
     def __init__(self):
@@ -14,7 +15,21 @@ class ConsolaUI:
         self.repo_tipos_cotizacion = RepositorioGenerico()
         self.repo_precios = RepositorioGenerico()
         self.repo_cotizaciones = RepositorioCotizacionDolar()
-
+         
+         
+         
+        # Precargar datos desde los CSV
+        cargar_datos(
+            self.repo_generos,
+            self.repo_editoriales,
+            self.repo_monedas,
+            self.repo_tipos_cotizacion,
+            self.repo_libros,
+            self.repo_precios,
+            self.repo_stock,
+            self.repo_cotizaciones
+        )
+        
         # 2. Instanciar Servicios
         self.svc_generos = ServicioGenerico(self.repo_generos)
         self.svc_editoriales = ServicioGenerico(self.repo_editoriales)

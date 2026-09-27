@@ -1,5 +1,10 @@
 # Changelog
-
+## [Ejercicio 5]
+- Creación de archivos CSV para la carga inicial de datos.
+- Se utilizaron los archivos `datos_base.csv`, `libros.csv` y `cotizaciones.csv`.
+- Se cargan al menos 10 registros por cada clase del dominio.
+- Implementación de `preload_data.py` para leer los CSV y crear las entidades correspondientes.
+- Integración de la carga inicial con los repositorios utilizados por la interfaz de consola.
 ## [Ejercicio 6]
 - Creación de la interfaz de consola en `ui/console.py` (clase ConsolaUI).
 - Implementación completa del CRUD mediante menús interactivos para las 8 entidades (Libro, Genero, Editorial, Moneda, TipoCotizacion, Precio, Stock, CotizacionDolar).
