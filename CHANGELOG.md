@@ -1,21 +1,29 @@
 # Changelog
+
+## [Ejercicio 7 ]
+- Creación del archivo `main.py` como punto de entrada del sistema.
+- Inicialización de `ConsolaUI` y ejecución del menú principal.
+
+## [Ejercicio 6]
+- Creación de la interfaz de consola en `ui/console.py` (clase ConsolaUI).
+- Implementación completa del CRUD mediante menús interactivos para las 8 entidades (Libro, Genero, Editorial, Moneda, TipoCotizacion, Precio, Stock, CotizacionDolar).
+- Creación y configuración de `main.py` como punto de entrada principal de la aplicación.
+- Integración de la capa de presentación (UI) con los servicios del sistema.
+
 ## [Ejercicio 5]
 - Creación de archivos CSV para la carga inicial de datos.
 - Se utilizaron los archivos `datos_base.csv`, `libros.csv` y `cotizaciones.csv`.
 - Se cargan al menos 10 registros por cada clase del dominio.
 - Implementación de `preload_data.py` para leer los CSV y crear las entidades correspondientes.
 - Integración de la carga inicial con los repositorios utilizados por la interfaz de consola.
-## [Ejercicio 6]
-- Creación de la interfaz de consola en `ui/console.py` (clase ConsolaUI).
-- Implementación completa del CRUD mediante menús interactivos para las 8 entidades (Libro, Genero, Editorial, Moneda, TipoCotizacion, Precio, Stock, CotizacionDolar).
-- Creación y configuración de `main.py` como punto de entrada principal de la aplicación.
-- Integración de la capa de presentación (UI) con los servicios del sistema.
+
 ## [Ejercicio 4]
 - Implementación de la capa de servicios en `services.py`.
 - Creación de `ServicioGenerico` para las operaciones de crear, buscar por id, listar, actualizar y eliminar.
 - Creación de servicios específicos para `Stock` y `CotizacionDolar`, utilizando sus respectivos repositorios.
 - Integración entre la capa de servicios, las entidades y los repositorios.
 - Pruebas de las operaciones CRUD para verificar el correcto funcionamiento de los servicios.
+
 ## [Ejercicio 3]
 - Definición de la interfaz genérica IRepositorio[T] (crear, leer_por_id, leer_todos, actualizar, eliminar) y su implementación en memoria RepositorioGenerico.
 - Definición de interfaces específicas IRepositorioStock e IRepositorioCotizacionDolar (con clave propia: libro_id, y tipo+fecha respectivamente) y sus implementaciones.
