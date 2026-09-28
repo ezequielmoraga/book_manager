@@ -24,7 +24,7 @@ def cargar_datos(
     repo_cotizaciones
 ):
 
-    carpeta = "src/book_manager/migrations/csv/"
+    carpeta = "book_manager/migrations/csv/"
 
     generos = {}
     editoriales = {}
